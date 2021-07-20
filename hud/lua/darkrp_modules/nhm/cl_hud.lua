@@ -3,82 +3,11 @@ local BG = Color(0, 0, 0, 230)
 local HealthBG = Color(99, 35, 35, 255)
 local ArmorBG = Color(0, 70, 88, 255)
 
-	surface.CreateFont( "Job", {
-		font = "Tahoma", -- Use the font-name which is shown to you by your operating system Font Viewer, not the file name
-		extended = false,
-		size = 25,
-		weight = 600,
-		italic = false,
-		symbol = false,
-	})
-	surface.CreateFont( "Nick", {
-		font = "Roboto", -- Use the font-name which is shown to you by your operating system Font Viewer, not the file name
-		extended = false,
-		size = 25,
-		weight = 600,
-		blursize = 0,
-		scanlines = 0,
-		antialias = true,
-		underline = false,
-		italic = false,
-		strikeout = false,
-		symbol = false,
-		rotary = false,
-		shadow = false,
-		additive = false,
-		outline = false,
-	})
-	surface.CreateFont( "Health", {
-		font = "Roboto", -- Use the font-name which is shown to you by your operating system Font Viewer, not the file name
-		extended = false,
-		size = 18,
-		weight = 1000,
-		blursize = 0,
-		scanlines = 0,
-		antialias = true,
-		underline = false,
-		italic = false,
-		strikeout = false,
-		symbol = false,
-		rotary = false,
-		shadow = false,
-		additive = false,
-		outline = false,
-	})
-	surface.CreateFont( "Armor", {
-		font = "Roboto", -- Use the font-name which is shown to you by your operating system Font Viewer, not the file name
-		extended = false,
-		size = 18,
-		weight = 1000,
-		blursize = 0,
-		scanlines = 0,
-		antialias = true,
-		underline = false,
-		italic = false,
-		strikeout = false,
-		symbol = false,
-		rotary = false,
-		shadow = false,
-		additive = false,
-		outline = false,
-	})
-	surface.CreateFont( "Ammo", {
-		font = "Roboto", -- Use the font-name which is shown to you by your operating system Font Viewer, not the file name
-		extended = false,
-		size = 35,
-		weight = 1000,
-		blursize = 0,
-		scanlines = 0,
-		antialias = true,
-		underline = false,
-		italic = false,
-		strikeout = false,
-		symbol = false,
-		rotary = false,
-		shadow = false,
-		additive = false,
-		outline = false,
-	})
+	surface.CreateFont( "Job", { font = "Tahoma", size = 25, weight = 600, antialias = true, })
+	surface.CreateFont( "Nick", { font = "Roboto", size = 25, weight = 600, antialias = true, })
+	surface.CreateFont( "Health", { font = "Roboto", size = 18, weight = 1000, antialias = true, })
+	surface.CreateFont( "Armor", { font = "Roboto", size = 18, weight = 1000, antialias = true, })
+	surface.CreateFont( "Ammo", { font = "Roboto", size = 35, weight = 1000, antialias = true, })
 
 local ply = LocalPlayer()
 
