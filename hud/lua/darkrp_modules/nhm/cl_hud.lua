@@ -94,6 +94,7 @@ local function hudDrawHUD()
 	DrawAmmunationAA()
 end
 
+
 local function hudDrawHUDPaint()
 	if not LocalPlayer():IsValid() then return end
 
